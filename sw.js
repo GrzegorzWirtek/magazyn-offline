@@ -4,6 +4,7 @@ const STATIC_FILES = [
 	'index.html',
 	'results.html',
 	'css/main.css',
+	'json/data.json',
 	'js/main.js',
 	'manifest.json',
 ];
