@@ -1,0 +1,344 @@
+@font-face {
+	font-family: GoogleSansRegular;
+	src: url('../fonts/GoogleSans-Regular.ttf');
+}
+
+$regal: rgba(153, 153, 167, 0.927);
+$podloga: rgba(153, 153, 167, 0.202);
+$red: rgb(222, 23, 23);
+
+.results {
+	height: 100vh;
+	width: 90vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	padding-top: 5vw;
+	padding-bottom: 20vw;
+	max-width: 500px;
+
+	&__grafic {
+		position: relative;
+		width: 100%;
+		max-width: 600px;
+		aspect-ratio: 1/1.6;
+		border: 2px solid rgb(177, 177, 177);
+	}
+
+	&__grafic::after {
+		content: '';
+		position: absolute;
+		width: 4px;
+		height: 12%;
+		background-color: black;
+		top: 60%;
+		right: -3px;
+	}
+
+	&__back {
+		padding: 10px 24px;
+		outline: none;
+		border: 2px solid rgba(0, 0, 0, 0.52);
+		color: rgba(0, 0, 0, 0.667);
+		border-radius: 5px;
+		font-size: 22px;
+		cursor: pointer;
+		outline: none;
+		margin-top: auto;
+		text-decoration: none;
+		font-weight: 500;
+	}
+}
+
+.cell {
+	position: absolute;
+	padding: 4px;
+	border: 1px solid white;
+	background-color: $regal;
+	font-size: 14px;
+
+	&__a {
+		bottom: 0;
+		right: 0;
+		width: 16.6%;
+		aspect-ratio: 1/0.7;
+	}
+	&__b {
+		bottom: 0;
+		right: 16.6%;
+		width: 16.6%;
+		aspect-ratio: 1/0.7;
+	}
+	&__c {
+		bottom: 0;
+		right: 33.2%;
+		width: 16.6%;
+		aspect-ratio: 1/0.7;
+	}
+	&__d {
+		bottom: 0;
+		right: 49.8%;
+		width: 16.6%;
+		aspect-ratio: 1/0.7;
+	}
+	&__e {
+		bottom: 0;
+		right: 66.4%;
+		width: 16.6%;
+		aspect-ratio: 1/0.7;
+	}
+
+	&__f {
+		bottom: 0;
+		right: 83%;
+		width: 16.6%;
+		aspect-ratio: 1/0.7;
+	}
+
+	&__g {
+		bottom: 12%;
+		left: 0;
+		height: 10%;
+		aspect-ratio: 0.8/1;
+	}
+
+	&__h {
+		bottom: 22%;
+		left: 0;
+		height: 10%;
+		aspect-ratio: 0.8/1;
+	}
+
+	&__i {
+		bottom: 32%;
+		left: 0;
+		height: 10%;
+		aspect-ratio: 0.8/1;
+	}
+
+	&__j {
+		bottom: 42%;
+		left: 0;
+		height: 10%;
+		aspect-ratio: 0.8/1;
+	}
+
+	&__k {
+		bottom: 52%;
+		left: 0;
+		height: 10%;
+		aspect-ratio: 0.8/1;
+	}
+
+	&__s {
+		top: 12%;
+		left: 0;
+		width: 20%;
+		aspect-ratio: 1/0.6;
+	}
+
+	&__s {
+		top: 12%;
+		left: 0;
+		width: 20%;
+		aspect-ratio: 1/0.6;
+	}
+	&__t {
+		top: 12%;
+		left: 20%;
+		width: 20%;
+		aspect-ratio: 1/0.6;
+	}
+
+	&__u {
+		top: 12%;
+		left: 40%;
+		width: 20%;
+		aspect-ratio: 1/0.6;
+	}
+
+	&__w {
+		top: 12%;
+		left: 60%;
+		width: 20%;
+		aspect-ratio: 1/0.6;
+	}
+
+	&__x {
+		top: 0;
+		left: 0;
+		width: 20%;
+		aspect-ratio: 1/0.6;
+	}
+
+	&__y {
+		top: 0;
+		left: 20%;
+		width: 20%;
+		aspect-ratio: 1/0.6;
+	}
+
+	&__z {
+		top: 0;
+		left: 40%;
+		width: 20%;
+		aspect-ratio: 1/0.6;
+	}
+
+	&__aa {
+		top: 0;
+		left: 60%;
+		width: 20%;
+		aspect-ratio: 1/0.6;
+	}
+
+	&__p-sciana-1 {
+		top: 48%;
+		right: 0;
+		height: 12%;
+		aspect-ratio: 0.7/1;
+		background-color: $podloga;
+	}
+
+	&__p-sciana-2 {
+		top: 36%;
+		right: 0;
+		height: 12%;
+		aspect-ratio: 0.7/1;
+		background-color: $podloga;
+	}
+
+	&__p-sciana-3 {
+		top: 24%;
+		right: 0;
+		height: 12%;
+		aspect-ratio: 0.7/1;
+		background-color: $podloga;
+	}
+
+	&__p-sciana-4 {
+		top: 12%;
+		right: 0;
+		height: 12%;
+		aspect-ratio: 0.7/1;
+		background-color: $podloga;
+	}
+
+	&__p-sciana-5 {
+		top: 0;
+		left: 80%;
+		width: 20%;
+		aspect-ratio: 1/0.6;
+		background-color: $podloga;
+	}
+
+	&__p-korytarz-1 {
+		top: 48%;
+		right: 22%;
+		height: 12%;
+		aspect-ratio: 0.7/1;
+		background-color: $podloga;
+	}
+
+	&__p-korytarz-2 {
+		top: 36%;
+		right: 22%;
+		height: 12%;
+		aspect-ratio: 0.7/1;
+		background-color: $podloga;
+	}
+
+	&__p-korytarz-3 {
+		top: 27%;
+		right: 22%;
+		height: 9%;
+		aspect-ratio: 1.9/1;
+		background-color: $podloga;
+	}
+
+	&__p-srodek-1 {
+		top: 48%;
+		right: 36%;
+		height: 12%;
+		aspect-ratio: 0.7/1;
+		background-color: $podloga;
+	}
+
+	&__p-srodek-2 {
+		top: 36%;
+		right: 36%;
+		height: 12%;
+		aspect-ratio: 0.7/1;
+		background-color: $podloga;
+	}
+
+	&__p-srodek-reg-1 {
+		top: 48%;
+		left: 26%;
+		height: 12%;
+		aspect-ratio: 0.7/1;
+		background-color: $podloga;
+	}
+
+	&__p-srodek-reg-2 {
+		top: 36%;
+		left: 26%;
+		height: 12%;
+		aspect-ratio: 0.7/1;
+		background-color: $podloga;
+	}
+
+	&__p-lewa {
+		bottom: 22%;
+		right: 46%;
+		height: 12%;
+		aspect-ratio: 0.7/1;
+		background-color: $podloga;
+	}
+
+	&__p-sciana-reg {
+		bottom: 62%;
+		left: 0;
+		height: 10%;
+		aspect-ratio: 0.8/1;
+		background-color: $podloga;
+	}
+}
+
+.info {
+	width: 100%;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 10px;
+
+	&__name {
+		font-family: GoogleSansRegular;
+		font-size: 18px;
+		margin-bottom: 6px;
+	}
+
+	&__location {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin-bottom: 10px;
+		text-align: center;
+		width: 100%;
+		background-color: $red;
+		color: white;
+		font-size: 20px;
+		font-weight: 600;
+		&--small {
+			font-size: 18px;
+			font-weight: 300;
+			font-family: GoogleSansRegular;
+		}
+	}
+}
+
+.active {
+	background-color: $red;
+	color: white;
+}

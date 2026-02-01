@@ -1,0 +1,12 @@
+@use 'fonts';
+@use 'body';
+@use 'form';
+@use 'search-results';
+@use 'main-wrapper';
+@use 'results';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
