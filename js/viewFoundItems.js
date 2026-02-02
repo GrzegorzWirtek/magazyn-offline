@@ -18,7 +18,7 @@ const addDataToSessionStorage = (item) => {
 const viewMessage = () => {
 	const messageElement = document.createElement('h3');
 	messageElement.classList.add('search-results__message');
-	messageElement.textContent = 'BRAK W BAZIE';
+	messageElement.textContent = 'Brak w bazie';
 	resultsDOM.appendChild(messageElement);
 };
 

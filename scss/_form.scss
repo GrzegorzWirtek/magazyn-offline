@@ -1,4 +1,10 @@
 .form {
+	&:has(input:focus) {
+		border-top: 1px solid rgba(0, 0, 150, 0.233);
+		border-left: 1px solid rgba(0, 0, 150, 0.233);
+		border-right: 1px solid rgba(0, 0, 150, 0.233);
+		border-bottom: 1px solid transparent;
+	}
 	margin-top: 32vh;
 	position: relative;
 	text-align: center;

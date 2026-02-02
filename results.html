@@ -11,6 +11,7 @@
 		<script>
 			const viewInfo = (item) => {
 				const resultsInfoDOM = document.querySelector('.info');
+				const resultsDOM = document.querySelector('.results');
 
 				Object.entries(item).forEach(([key, value]) => {
 					if (key === 'id') return;
@@ -22,6 +23,7 @@
 					h3.textContent = value;
 
 					resultsInfoDOM.appendChild(h3);
+					resultsDOM.style.visibility = 'visible';
 				});
 			};
 
