@@ -1,8 +1,18 @@
 const resultsDOM = document.querySelector('.search-results');
 let CURRENT_LISTENER = null;
 
-const redirectPage = (e) => {
-	window.location.href = `results.html?q=${e.target.textContent}`;
+const redirectPage = () => {
+	window.location.href = 'results.html';
+};
+
+const getDataAttribute = (e) => {
+	const itemString = e.target.getAttribute('data-info');
+	return JSON.parse(itemString);
+};
+
+const addDataToSessionStorage = (item) => {
+	sessionStorage.clear();
+	sessionStorage.setItem('pilot', JSON.stringify(item));
 };
 
 const viewMessage = () => {
@@ -17,10 +27,11 @@ export const viewResults = (foundItems) => {
 
 	if (!foundItems.length) return viewMessage();
 
-	foundItems.forEach(({ name }) => {
+	foundItems.forEach((item) => {
 		const newElement = document.createElement('button');
 		newElement.classList.add('search-results__button');
-		newElement.textContent = name;
+		newElement.textContent = item.name;
+		newElement.setAttribute('data-info', JSON.stringify(item));
 		resultsDOM.appendChild(newElement);
 	});
 
@@ -29,7 +40,9 @@ export const viewResults = (foundItems) => {
 	}
 
 	CURRENT_LISTENER = (e) => {
-		redirectPage(e);
+		const item = getDataAttribute(e);
+		addDataToSessionStorage(item);
+		redirectPage();
 	};
 
 	resultsDOM.addEventListener('click', CURRENT_LISTENER);

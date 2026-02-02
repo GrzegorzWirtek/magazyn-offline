@@ -10,12 +10,6 @@ const searchItems = (inputValue) => {
 	return filteredData.sort((a, b) => a.name.localeCompare(b.name));
 };
 
-export const findOneItem = (itemName) => {
-	return items.find(
-		(item) => item.name.toLowerCase() === itemName.toLowerCase(),
-	);
-};
-
 export const findItems = (inputValue) => {
 	const foundItems = searchItems(inputValue);
 	return foundItems;
