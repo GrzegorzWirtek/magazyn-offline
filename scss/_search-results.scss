@@ -1,20 +1,22 @@
+@use 'variables' as var;
+
 .search-results {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	gap: 5px;
-	background-color: rgb(220, 192, 155);
+	gap: 10px;
 
 	&__button {
 		width: 100%;
-		background-color: green;
-		color: white;
+		padding: 10px 0;
+		@include var.item-style();
+		font-size: 20px;
 	}
 
 	&__message {
-		font-size: 16px;
+		font-size: 20px;
 		color: red;
 		font-size: bold;
 	}

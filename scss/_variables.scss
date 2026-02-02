@@ -1,0 +1,15 @@
+@mixin main-width() {
+	width: 90vw;
+	max-width: 500px;
+}
+
+@mixin item-style() {
+	background-color: rgba(255, 255, 255, 0.811);
+	border: 1px solid rgb(159, 159, 159);
+	border-radius: 5px;
+	background-image: linear-gradient(
+		15deg,
+		rgba(19, 19, 61, 0.344),
+		rgba(248, 182, 60, 0.185)
+	);
+}
