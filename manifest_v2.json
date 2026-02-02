@@ -1,6 +1,6 @@
 {
-	"name": "Magazyn",
-	"short_name": "Magazyn",
+	"name": "Magazyn Offline",
+	"short_name": "Magazyn Offline",
 	"start_url": "index.html",
 	"display": "fullscreen",
 	"background_color": "#ffffff",
