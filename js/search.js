@@ -1,5 +1,7 @@
-const searchItems = (inputValue, data) => {
-	const filteredData = data
+import { items } from './store/data.js';
+
+const searchItems = (inputValue) => {
+	const filteredData = items
 		.filter((item) =>
 			item.name.toLowerCase().includes(inputValue.toLowerCase()),
 		)
@@ -8,17 +10,13 @@ const searchItems = (inputValue, data) => {
 	return filteredData.sort((a, b) => a.name.localeCompare(b.name));
 };
 
-export const findOneItem = (value, data) => {
-	return data.find((item) => item.name.toLowerCase() === value.toLowerCase());
+export const findOneItem = (itemName) => {
+	return items.find(
+		(item) => item.name.toLowerCase() === itemName.toLowerCase(),
+	);
 };
 
-export const getData = async () => {
-	const res = await fetch('json//data.json');
-	return await res.json();
-};
-
-export const findItems = async (inputValue) => {
-	const data = await getData(inputValue);
-	const foundItems = searchItems(inputValue, data);
+export const findItems = (inputValue) => {
+	const foundItems = searchItems(inputValue);
 	return foundItems;
 };

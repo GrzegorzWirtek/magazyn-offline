@@ -1,6 +1,6 @@
-import { getData, findOneItem } from './search.js';
+import { findOneItem } from './search.js';
 const params = new URLSearchParams(window.location.search);
-const query = params.get('q');
+const itemName = params.get('q');
 const CURRENT_ID = null;
 
 const resultsInfoDOM = document.querySelector('.info');
@@ -26,9 +26,8 @@ const showLocation = ({ id }) => {
 	document.querySelector(`#${id}`).classList.add('active');
 };
 
-const getItemInfo = async () => {
-	const data = await getData();
-	const itemInfo = findOneItem(query, data);
+const getItemInfo = () => {
+	const itemInfo = findOneItem(itemName);
 	viewInfo(itemInfo);
 	showLocation(itemInfo);
 };

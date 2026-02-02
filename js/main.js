@@ -3,7 +3,7 @@ import { viewResults } from './viewFoundItems.js';
 
 const searchButton = document.querySelector('#search-button');
 
-const handleSubmit = async (e) => {
+const handleSubmit = (e) => {
 	e.preventDefault();
 	const inputElement = document.getElementById('search-input');
 	const inputValue = inputElement.value;
@@ -12,7 +12,7 @@ const handleSubmit = async (e) => {
 	if (!inputValue) return;
 	inputElement.value = '';
 
-	const foundItems = await findItems(inputValue);
+	const foundItems = findItems(inputValue);
 	viewResults(foundItems);
 };
 
