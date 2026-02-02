@@ -2,9 +2,9 @@
 	"name": "Magazyn",
 	"short_name": "Magazyn",
 	"start_url": "index.html",
-	"display": "standalone",
+	"display": "fullscreen",
 	"background_color": "#ffffff",
-	"theme_color": "#317EFB",
+	"theme_color": "#25252a",
 	"orientation": "portrait",
 	"icons": [
 		{
