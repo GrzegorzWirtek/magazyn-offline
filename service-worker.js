@@ -10,7 +10,7 @@ const ASSETS_TO_CACHE = [
 	'./js/main.js',
 	'./js/data.js',
 	'./js/search.js',
-	'./js/wievFoundItems.js',
+	'./js/viewFoundItems.js',
 
 	'./fonts/GoogleSans-Regular.ttf',
 	'./fonts/GoogleSans-SemiBold.ttf',
