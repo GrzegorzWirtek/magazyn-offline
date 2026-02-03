@@ -1,4 +1,4 @@
-import { items } from './store/data.js';
+import { items } from './data.js';
 
 const searchItems = (inputValue) => {
 	const filteredData = items
