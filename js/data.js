@@ -460,7 +460,7 @@ export const items = [
 		id: 'r',
 	},
 	{
-		name: 'HITACHI RC46160 oryg',
+		name: 'HITACHI RC45160 oryg',
 		location: 'E1',
 		id: 'e',
 	},
