@@ -146,8 +146,8 @@ export const items = [
 	},
 	{
 		name: 'AKB…40…301 oryg',
-		location: '### Podłoga przy ścianie',
-		id: 'pod-sc-1',
+		location: 'Podłoga przy ścianie',
+		id: 'pod-sc-3',
 	},
 	{
 		name: 'AKB739757229 oryg',
@@ -210,6 +210,11 @@ export const items = [
 		id: 'pod-sr-1',
 	},
 	{
+		name: 'BN59-01178B oryg',
+		location: 'Z2',
+		id: 'z',
+	},
+	{
 		name: 'BN59-01198Q',
 		location: 'Podłoga korytarz',
 		id: 'pod-kor-2',
@@ -265,14 +270,14 @@ export const items = [
 		id: 'pod-kor-3',
 	},
 	{
-		name: 'BN5901303 oryg',
+		name: 'BN59-01303 oryg',
 		location: 'U2',
 		id: 'u',
 	},
 	{
 		name: 'BN59-01312b (1330) ch',
-		location: 'R2',
-		id: 'r',
+		location: 'Podłoga przy regale "R"',
+		id: 'pod-sc-reg',
 	},
 	{
 		name: 'BN59-01315 oryg',
@@ -381,6 +386,11 @@ export const items = [
 	},
 	{
 		name: 'COCOAA oryg',
+		location: 'D1',
+		id: 'd',
+	},
+	{
+		name: 'CT 8543 (41) oryg',
 		location: 'W2',
 		id: 'w',
 	},
@@ -615,7 +625,7 @@ export const items = [
 		id: 'b',
 	},
 	{
-		name: 'N2Q …1333 oryg',
+		name: 'N2Q …1133 oryg',
 		location: 'Y3',
 		id: 'y',
 	},
@@ -695,8 +705,13 @@ export const items = [
 		id: 'pod-sc-4',
 	},
 	{
+		name: 'R3 Pa 23 oryg',
+		location: 'T3 (z tyłu)',
+		id: 't',
+	},
+	{
 		name: 'RC1818 / RC4592',
-		location: 'T3 tył (S3)',
+		location: 'T3 (z tyłu) (S3)',
 		id: 't',
 	},
 	{
@@ -936,6 +951,11 @@ export const items = [
 	},
 	{
 		name: 'SHW/RMC/0138N oryg',
+		location: 'A2',
+		id: 'a',
+	},
+	{
+		name: 'SHW/RMC/0140 oryg',
 		location: 'A2',
 		id: 'a',
 	},
