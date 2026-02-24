@@ -150,7 +150,7 @@ export const items = [
 		id: 'pod-sc-3',
 	},
 	{
-		name: 'AKB739757229 oryg',
+		name: 'AKB73975729 oryg',
 		location: 'T1',
 		id: 't',
 	},
