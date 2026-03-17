@@ -365,6 +365,11 @@ export const items = [
 		id: 'f',
 	},
 	{
+		name: 'BN59-01483c oryg',
+		location: 'B1',
+		id: 'b',
+	},
+	{
 		name: 'BRANDT 963 oryg',
 		location: 'F3',
 		id: 'f',
@@ -678,6 +683,11 @@ export const items = [
 		name: 'Nokia RC110 oryg',
 		location: 'B1',
 		id: 'b',
+	},
+	{
+		name: 'OK / Peaq UD oryg',
+		location: 'U1 (z tyłu)',
+		id: 'u',
 	},
 	{
 		name: 'ONVO oryg',
@@ -1086,8 +1096,8 @@ export const items = [
 	},
 	{
 		name: 'XM-RM019 ch',
-		location: 'G3',
-		id: 'g',
+		location: 'U1',
+		id: 'u',
 	},
 	{
 		name: 'XM-RM019 oryg',
